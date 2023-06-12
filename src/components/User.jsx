@@ -17,7 +17,7 @@ const User = ({ user, deleteUser, changeShowModal, setIsUserToUpdate }) => {
   };
 
   return (
-    <section className="border border-6 border-solid border-black p-4 w-[200px] rounded-md">
+    <section className="border border-6 border-solid border-black p-4 w-[280px] rounded-md">
       <h4 className="font-bold text-center pb-3">{`${user.first_name} ${user.last_name}`}</h4>
       <div>
         <h5 className="text-gray-500 "> Correo</h5>

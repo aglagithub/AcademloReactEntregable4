@@ -111,7 +111,7 @@ function App() {
   }, []);
 
   return (
-    <main className='font-["Roboto"] max-w-[800px]'>
+    <main className='font-["Roboto"] max-w-[1024px] flex flex-col align-middle pb-2'>
       <Header changeShowModal={changeShowModal} />
 
       <ModalForm
@@ -129,6 +129,7 @@ function App() {
         changeShowModal={changeShowModal}
         setIsUserToUpdate={setIsUserToUpdate}
       />
+      <div className="text-center font-bold py-2">Academlo 2023.</div>
     </main>
   );
 }
