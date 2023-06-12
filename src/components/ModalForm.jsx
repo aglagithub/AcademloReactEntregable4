@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useForm } from "react-hook-form";
 
-const ModalForm = ({ isShownModal, changeShowModal, createUser, isUserToUpdate, updateUser,resetModalForm
+const ModalForm = ({ isShownModal, changeShowModal, createUser, isUserToUpdate, updateUser, resetModalForm
 }) => {
     const { register, handleSubmit, reset } = useForm()
 
@@ -11,10 +11,10 @@ const ModalForm = ({ isShownModal, changeShowModal, createUser, isUserToUpdate, 
             data.birthday = null
         }
         //console.log("información a enviar:", data)
-    
+
         if (isUserToUpdate) {
             console.log("Updating user")
-            updateUser(data,reset)
+            updateUser(data, reset)
         }
         else {
             createUser(data, reset)
